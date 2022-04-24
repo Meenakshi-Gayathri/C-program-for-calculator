@@ -11,6 +11,6 @@ sub=a-b;
 mult=a*b;
 div=a/b;
 rem=a%b;
-printf("Sum is %d\n Difference %d\n Multiple is %d\n Division is %f\n",sum,sub,mult,div,rem);
+printf(" Sum is %d\n Difference %d\n Multiple is %d\n Division is %.2f\n",sum,sub,mult,div,rem);
 getch();
 }
