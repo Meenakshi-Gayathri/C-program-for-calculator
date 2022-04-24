@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a,b,sum,sub,mult,rem;
+float div;
+printf("Enter any two numbers\n");
+scanf("%d %d",&a,&b);
+sum=a+b;
+sub=a-b;
+mult=a*b;
+div=a/b;
+rem=a%b;
+printf("Sum is %d\n Difference %d\n Multiple is %d\n Division is %f\n",sum,sub,mult,div,rem);
+getch();
+}
