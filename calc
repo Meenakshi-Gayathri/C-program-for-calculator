@@ -1,7 +1,7 @@
 // Program for calculator
 #include<stdio.h>
 #include<conio.h>
-void main()
+int main()
 {
 int a,b,sum,sub,mult,rem;
 float div;
@@ -13,5 +13,5 @@ mult=a*b;
 div=a/b;
 rem=a%b;
 printf(" Sum is %d\n Difference %d\n Multiple is %d\n Division is %.2f\n",sum,sub,mult,div,rem);
-getch();
+return(0);
 }
