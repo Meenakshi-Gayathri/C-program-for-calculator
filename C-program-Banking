@@ -29,7 +29,7 @@ int main(){
     return 0;
 }
 
-//3.Accessing the account and displaying the details using structures,functions,pointer//
+//2.Accessing the account and displaying the details//
 #include<stdio.h>
 #include<conio.h>
 #include<string.h>
@@ -50,6 +50,7 @@ int main(){
     return 0;
 }
 
+//3.Accessing the account and displaying the details using structures,functions,pointer//
 #include<stdio.h>
 #include<conio.h>
 #include<string.h>
