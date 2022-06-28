@@ -10,16 +10,23 @@ struct new_account
    char acc_holder_address[100];
 }sb;
 int main(){
+    int d;
     printf("Enter the bank name: ");
-    scanf("%c",&sb.bank_name);
+    scanf("%s",&sb.bank_name);
+    scanf("%c",&d);
     printf("\nEnter the bank branch: ");
-    scanf("%c",&sb.bank_branch);
+    scanf("%s",&sb.bank_branch);
+    scanf("%c",&d);
     printf("\nEnter name of holder: ");
-    scanf("%c",&sb.acc_holder_name);
+    scanf("%s",&sb.acc_holder_name);
+    scanf("%c",&d);
     printf("\nEnter acc number: ");
-    scanf("%c",sb.acc_number_savings);
+    scanf("%s",sb.acc_number_savings);
+    scanf("%c",&d);
     printf("\nEnter address: ");
-    scanf("%c",&sb.acc_holder_address);
+    scanf("%s",&sb.acc_holder_address);
+    scanf("%c",&d);
+    return 0;
 }
 
 //2.Accessing the account with given details//
