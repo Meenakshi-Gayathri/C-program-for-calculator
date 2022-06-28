@@ -29,7 +29,7 @@ int main(){
     return 0;
 }
 
-//2.Accessing the account with given details//
+//3.Accessing the account and displaying the details using structures,functions,pointer//
 #include<stdio.h>
 #include<conio.h>
 #include<string.h>
@@ -50,3 +50,37 @@ int main(){
     return 0;
 }
 
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+#include<stdlib.h>
+struct bankacc{
+    char name[20];
+    int accno;
+    int age;
+    char gender[10];
+};
+struct bankacc sb1,*ptr1;
+void display(){
+    printf ("\n Details of (sb1) \n");  
+    printf(" Name: %s\n", ptr1->name);  
+    printf(" Accno: %d\n", ptr1->accno);  
+    printf(" Age: %d\n", ptr1->age);
+    printf(" Gender: %s\n", ptr1->gender);
+}
+
+int main(){
+    ptr1 = &sb1;
+    printf (" Enter the name of(sb1): ");  
+    scanf (" %s", &ptr1->name);  
+      
+    printf (" Enter the accno of(sb1): ");  
+    scanf (" %d", &ptr1->accno);  
+    printf (" Enter the age of(sb1): ");  
+    scanf (" %d", &ptr1->age);  
+    printf (" Enter the gender of(sb1): ");  
+    scanf (" %s", &ptr1->gender); 
+    
+    display();
+    return 0;
+}
