@@ -1,0 +1,45 @@
+//Program to show banking operations and print the details regarding it//
+//1.Create new account //
+#include<stdio.h>
+struct new_account
+{
+   char bank_name[20];
+   char bank_branch[20];
+   char acc_holder_name[30];
+   int acc_number_savings;
+   char acc_holder_address[100];
+}sb;
+int main(){
+    printf("Enter the bank name: ");
+    scanf("%c",&sb.bank_name);
+    printf("\nEnter the bank branch: ");
+    scanf("%c",&sb.bank_branch);
+    printf("\nEnter name of holder: ");
+    scanf("%c",&sb.acc_holder_name);
+    printf("\nEnter acc number: ");
+    scanf("%c",sb.acc_number_savings);
+    printf("\nEnter address: ");
+    scanf("%c",&sb.acc_holder_address);
+}
+
+//2.Accessing the account with given details//
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+#include<stdlib.h>
+struct bankacc{
+    char name[20];
+    int accno;
+    char gender;
+    int phone_no;
+    float balance;
+    float deposit;
+}sb1,sb2;
+
+int main(){
+    struct bankacc sb1={"ABCD",1234,'M',1234567890,12000.00,10000.00};
+    struct bankacc sb2={"EFGH",5678,'F',2345678901,10000.00,15000.00};
+    printf("%s\n%d",sb1.name,sb1.accno);
+    return 0;
+}
+
