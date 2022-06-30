@@ -71,6 +71,11 @@ void display(){
 }
 
 int main(){
+    FILE *file_bankaccsb1;
+    file_bankaccsb1 = fopen("data.txt","w");
+    scanf("%s",sb1.name);
+    fprintf(file_bankaccsb1,"%s",sb1.name);
+    fclose(file_bankaccsb1);
     ptr1 = &sb1;
     printf (" Enter the name of(sb1): ");  
     scanf (" %s", &ptr1->name);  
